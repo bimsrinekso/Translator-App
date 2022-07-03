@@ -1,4 +1,11 @@
 # Translator-App
+>This app is an easy way to learn machine learning.
+
+## Setup
+
+Make sure to delete file google-service.json and then build your own file, i think this video will help you (https://www.youtube.com/watch?v=nep85PD8U7M&ab_channel=CubixSol)
+
+### Add dependencies :
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.4.2'
@@ -13,11 +20,24 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
 
+### Add this permission in AndroidManifest.xml :
+`
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+`
+
+
+
+
 Preview Project :
 
 
 https://user-images.githubusercontent.com/82699596/177057162-6dd046b9-04ea-4c58-9211-149cda0aaec5.mp4
 
 
+## Acknowledgements
+Give credit here.
+- This project was inspired by GeeksforGeeks
+- This project was based on [this tutorial](https://www.youtube.com/watch?v=i58g-EPG5_s&ab_channel=GeeksforGeeks).
+- Many thanks to Eight Group
 
-Reference : https://www.youtube.com/watch?v=i58g-EPG5_s&ab_channel=GeeksforGeeks
