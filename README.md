@@ -36,8 +36,8 @@ https://user-images.githubusercontent.com/82699596/177057162-6dd046b9-04ea-4c58-
 
 
 ## Acknowledgements
-Give credit here.
+
 - This project was inspired by GeeksforGeeks
 - This project was based on [this tutorial](https://www.youtube.com/watch?v=i58g-EPG5_s&ab_channel=GeeksforGeeks).
-- Many thanks to Eight Group
+- Many thanks to GeeksforGeeks
 
