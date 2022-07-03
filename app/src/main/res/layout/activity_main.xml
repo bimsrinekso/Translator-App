@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background"
+    style="@style/AppTheme.MaterialTheme"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/translate"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eight Translator"
+                android:textSize="23sp"
+                android:textColor="@color/blueutama"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background"
+            >
+
+            <Spinner
+                android:id="@+id/idFromSpinner"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <ImageButton
+                    android:id="@+id/isButtonTrans"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_arrows"
+                    app:tint="@color/black"
+                    android:layout_gravity="center"
+                    android:background="@color/blueutama"
+                    />
+
+            <Spinner
+                android:id="@+id/idToSpinner"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/idEdtSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="16sp"
+            android:hint="Enter Text"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#0277BD"
+            android:textSize="16sp"
+            android:letterSpacing="0.03"
+            android:background="@drawable/background"
+            android:elevation="3dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/idBtnTranslate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Translate"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/idTVTranslatedTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="16sp"
+            android:hint="Translated text"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#0277BD"
+            android:textSize="16sp"
+            android:letterSpacing="0.03"
+            android:background="@drawable/background"
+            android:elevation="3dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_mic"
+                app:tint="@color/blueutama"
+                android:id="@+id/idIVMic"
+                />
+
+            <ImageView
+                android:id="@+id/idcopyBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_copy"
+                app:tint="@color/blueutama"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
